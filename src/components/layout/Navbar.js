@@ -19,7 +19,7 @@ export default function Navbar() {
                         <Link to="/contact">Contato</Link>
                     </li>
                     <li className={styles.item}>
-                        <Link to="/nvda">nvda</Link>
+                        <Link to="/nvda">NVDC34</Link>
                     </li>
                 </ul>
             </Container>

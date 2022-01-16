@@ -7,7 +7,7 @@ export default function Nvda() {
 
     useEffect(() => {
         axios
-            .get('https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=nvda&apikey=2V82MYWM0SJ18ZSZ')
+            .get('https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=nvdc34.sa&apikey=2V82MYWM0SJ18ZSZ')
             .then(res => {
                 setPost(res.data['Global Quote'])
             })
@@ -22,7 +22,7 @@ export default function Nvda() {
             <p>Symbol</p>
             <h1>{post['01. symbol']}</h1>
             <p>price</p>
-            <h1>USD {post['05. price']}</h1>
+            <h1>BRL {post['05. price']}</h1>
         </div>
     )
 }
