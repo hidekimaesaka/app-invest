@@ -28,3 +28,25 @@
     width: 350px;
     margin: 2em 0;
 }
+
+@media only screen and (max-width: 1334px) {
+
+
+    .home_container h1{
+        font-size: 3.8em;
+        margin-bottom: .5em;
+    }
+    
+    .home_container p{
+        margin-bottom: 1.5em;
+        color: #7b7b7b;
+        font-size: 1.8em;
+    }
+
+    .home_container img{
+        width: 750px;
+        margin: 2em 0;
+    }
+
+    
+  }

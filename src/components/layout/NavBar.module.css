@@ -24,3 +24,16 @@
 .item a:hover{
     color: #fc540c;
 }
+
+
+@media only screen and (max-width: 1334px) {
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(29, 29, 29);
+        padding: 1em;
+        font-size: 2.5em;
+    }
+    
+  }
