@@ -1,6 +1,4 @@
-import LinkButton from "./LinkButton"
 import { Link } from "react-router-dom"
-import logo from '../../img/savings.png'
 import styles from './NavBar.module.css'
 import Container from "./Container"
 
@@ -18,8 +16,11 @@ export default function Navbar() {
                     <li className={styles.item}>
                         <Link to="/contact">Contato</Link>
                     </li>
-                    <li className={styles.item}>
-                        <Link to="/nvda">NVDC34</Link>
+                    <li className={styles.login}>
+                        <Link to="/login">Sign-In</Link>
+                    </li>
+                    <li className={styles.login}>
+                        <Link to="/signup">Sign-Up</Link>
                     </li>
                 </ul>
             </Container>

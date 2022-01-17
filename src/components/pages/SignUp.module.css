@@ -1,0 +1,14 @@
+.signup_container {
+    width: 450px;
+    margin: 0 auto;
+    padding: 3em;
+    margin-top: 10%;
+}
+
+.signup_container h1 {
+    margin-bottom: 0.5em;
+}
+
+.signup_container p {
+    color: #7b7b7b;
+}

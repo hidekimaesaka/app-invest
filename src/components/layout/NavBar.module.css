@@ -25,6 +25,21 @@
     color: #fc540c;
 }
 
+.login a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.login{
+    margin-right: 1em;
+}
+
+.login a:hover{
+    color: #fc540c;
+}
+
+
 
 @media only screen and (max-width: 1334px) {
 
