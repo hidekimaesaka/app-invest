@@ -12,10 +12,12 @@ export default function SignUpForm(){
 
     function submit(e) {
         e.preventDefault()
-        password_1 && password_2 ? 
-            password_1 !== password_2 ? setAlert('Senhas não coincidem!') :
-            console.log(`email: ${email} username: ${username} password: ${password_1}`) :
-        setAlert('Preencha os campos de senha!')
+        email && username ?
+            password_1 && password_2 ? 
+                password_1 !== password_2 ? setAlert('Senhas não coincidem!') :
+                console.log(`email: ${email} username: ${username} password: ${password_1}`) :
+            setAlert('Preencha os campos de senha!'):
+        setAlert('Preencha todos os campos!')
     }
 
     return(
