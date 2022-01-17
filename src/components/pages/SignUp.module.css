@@ -12,3 +12,18 @@
 .signup_container p {
     color: #7b7b7b;
 }
+
+
+@media only screen and (max-width: 1334px) {
+    .signup_container {
+        width: 650px;
+        margin: 0 auto;
+        padding: 3em;
+        margin-top: 25%;
+    }
+    .signup_container h1 {
+        margin-bottom: 0.5em;
+        font-size: 95px;
+    }
+
+}
