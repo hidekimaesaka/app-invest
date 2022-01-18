@@ -6,10 +6,13 @@ export default function SignInForm() {
 
     const [username, setUsername] = useState()
     const [password, setPassword] = useState()
+    const [alert, setAlert] = useState()
 
     function submit(e) {
         e.preventDefault()
-        console.log(`username: ${username} password: ${password}`)
+        username && password ?
+            console.log(`username: ${username} password: ${password}`) :
+        setAlert('Preencha todos os campos!')
     }
 
     return (
@@ -24,7 +27,8 @@ export default function SignInForm() {
                 placeholder='digite sua senha!'
                 onChange={(e) => setPassword(e.target.value)}
             />
-            <button type="submit">Log In!</button>
+            <p>{alert}</p>
+            <button onClick={(e) => setAlert()} type="submit">Log In!</button>
         </form>
     )
 }
