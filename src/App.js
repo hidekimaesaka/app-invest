@@ -6,6 +6,7 @@ import Container from './components/layout/Container';
 import Nvda from './components/pages/Nvda';
 import SignUp from './components/pages/SignUp';
 import SignIn from './components/pages/SignIn';
+import User from './components/pages/User';
 
 
 
@@ -19,6 +20,7 @@ export default function App() {
           <Route path ='/nvda' element={<Nvda></Nvda>}/>
           <Route path ='/signup' element={<SignUp></SignUp>}/>
           <Route path ='/login' element={<SignIn></SignIn>}/>
+          <Route path ='/user/:id/:token' element={<User></User>}/>
       </Routes>
         </Container>
       <Footer></Footer>

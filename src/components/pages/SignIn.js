@@ -11,6 +11,27 @@ export default function SignIn() {
     const [password, setPassword] = useState()
     const [alert, setAlert] = useState()
 
+    // async function auth(id,token) {
+        
+    //     console.log(token)
+    //     const response = await api.get(`/user/${id}`, { headers:{
+    //         'Content-Type': 'application/json',
+    //         'authorization': `Bearer ${token}`
+    //     }}
+        
+    // )
+    //     .then((response) => {
+            
+    //         console.log(response)
+            
+    //     })
+    //     .catch((error) => {
+    //         const { msg } = error.response.data
+    //         console.log(error.response.status);
+    //         console.log(error.response.headers);
+    //     })
+    // }
+
     async function submit(e) {
         e.preventDefault()
 
@@ -23,7 +44,14 @@ export default function SignIn() {
                 email: email,
                 password: password
             })
-            .then((response) => { navigate("/user")})
+            .then((response) => { 
+                
+                const {id, token} = response.data
+                console.log(id,token)
+                navigate(`/user/${id}/${token}`)
+                //auth(id, token)
+
+            })
             .catch((error) => {
                 const {msg} = error.response.data
                 setAlert(msg);

@@ -58,7 +58,7 @@ export default function SignUp(){
             />
             <input
                 type='text'
-                placeholder='nome de usuário'
+                placeholder='digite seu nome'
                 onChange={(e) => setUsername(e.target.value)}
             />
             <input type='password'
