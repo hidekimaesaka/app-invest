@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from "./components/pages/Home";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
@@ -13,14 +13,14 @@ export default function App() {
   return (
     <Router>
       <Navbar></Navbar>
-      <Switch>
         <Container customClass="min-height">
-          <Route exact path='/'><Home></Home></Route>
-          <Route exact path ='/nvda'><Nvda></Nvda></Route>
-          <Route exact path ='/signup'><SignUp></SignUp></Route>
-          <Route exact path ='/login'><SignIn></SignIn></Route>
+      <Routes>
+          <Route path='/' element={<Home></Home>}/>
+          <Route path ='/nvda' element={<Nvda></Nvda>}/>
+          <Route path ='/signup' element={<SignUp></SignUp>}/>
+          <Route path ='/login' element={<SignIn></SignIn>}/>
+      </Routes>
         </Container>
-      </Switch>
       <Footer></Footer>
     </Router>
   );
