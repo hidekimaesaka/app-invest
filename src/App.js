@@ -22,7 +22,7 @@ export default function App() {
           <Route path ='/signup' element={<SignUp></SignUp>}/>
           <Route path ='/login' element={<SignIn></SignIn>}/>
           <Route path ='/user/:id/:token' element={<User></User>}/>
-          <Route path ='/newproduct/:id' element={<NewProduct></NewProduct>}/>
+          <Route path ='/newproduct/:id:token' element={<NewProduct></NewProduct>}/>
       </Routes>
         </Container>
       <Footer></Footer>
