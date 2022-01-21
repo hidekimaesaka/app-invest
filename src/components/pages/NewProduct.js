@@ -60,7 +60,7 @@ export default function NewProduct() {
                 placeholder='Quantidade'
                 onChange={(e) => setQtd(e.target.value)}
             />
-            <input type='text'
+            <input type="number" min="2" step="any"
                 placeholder='Preço pago'
                 onChange={(e) => setBp(e.target.value)}
             />
