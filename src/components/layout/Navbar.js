@@ -10,12 +10,12 @@ export default function Navbar() {
                     <li className={styles.item}>
                         <Link to="/">Home</Link>
                     </li>
-                    <li className={styles.item}>
+                    {/* <li className={styles.item}>
                         <Link to="/company">Sobre</Link>
                     </li>
                     <li className={styles.item}>
                         <Link to="/contact">Contato</Link>
-                    </li>
+                    </li> */}
                     <li className={styles.login}>
                         <Link to="/login">Sign-In</Link>
                     </li>
