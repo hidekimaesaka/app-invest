@@ -13,7 +13,7 @@ export default function User({ match }) {
     const { id, token } = useParams()
 
     function sendID(){
-        navigate(`/newproduct/${id}`)
+        navigate(`/newproduct/${id}/${token}`)
     }
 
 

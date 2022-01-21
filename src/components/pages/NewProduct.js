@@ -12,7 +12,7 @@ export default function NewProduct() {
     const [bp, setBp] = useState()
     const [qtd, setQtd] = useState()
     const { id, token } = useParams()
-    
+    console.log(id)
     const [alert, setAlert] = useState()
 
    async function submit(e){
