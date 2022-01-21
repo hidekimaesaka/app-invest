@@ -1,13 +1,22 @@
-import { useParams } from "react-router-dom"
+import { useParams, useNavigate } from "react-router-dom"
 import api from "../services/api"
 import { useEffect, useState } from "react"
+import Table from "../layout/Table"
+import LinkButton from '../layout/LinkButton'
+import styles from "./User.module.css"
 
 
 export default function User({ match }) {
 
     const [nome, setNome] = useState()
-
+    const navigate = useNavigate()
     const { id, token } = useParams()
+
+    function sendID(){
+        navigate(`/newproduct/${id}`)
+    }
+
+
     async function auth(id) {
 
         const response = await api.get(`/user/${id}`, {
@@ -36,8 +45,8 @@ export default function User({ match }) {
     }, [])
 
     return (
-        <div>
-            <h1>Olá {nome} em breve sua interface estará pronta!</h1>
+        <div className={styles.walletpage}>
+            <button onClick={sendID}>Novo Produto</button>
         </div>
     )
 }

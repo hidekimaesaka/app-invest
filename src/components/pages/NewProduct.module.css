@@ -1,0 +1,158 @@
+.newproduct_container{
+    width: 450px;
+    margin: 0 auto;
+    padding: 3em;
+}
+
+.newproduct_container h1{
+    margin-bottom: 0.5em;
+}
+
+.newproduct_container p{
+    color: #7b7b7b;
+}
+
+.signup_container {
+    width: 450px;
+    margin: 0 auto;
+    padding: 3em;
+    margin-top: 10%;
+}
+
+.signup_container h1 {
+    margin-bottom: 0.5em;
+}
+
+.signup_container p {
+    color: #7b7b7b;
+}
+
+.form {
+    width: 100%;
+    margin: 2em 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+.form input {
+    padding: .7em;
+    border-radius: 0;
+    border: none;
+    margin-top: 2em;
+}
+
+.form button{
+    margin-top: 2em;
+    padding: .7em;
+    cursor: pointer;
+}
+
+.form input::placeholder {
+    color: #7b7b7b;
+}
+
+.form button{
+
+    background-color: #222;
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    transition: 1s;
+    margin-top: 2em;
+    border: none;
+}
+
+.form button:hover{
+    color: #fc540c;
+}
+
+
+
+@media only screen and (max-width: 1334px) {
+
+    .newproduct_container{
+        width: 700px;
+        margin: 0 auto;
+        padding: 3em;
+        font-size: 32px;
+        margin-top: 10%;
+    }
+    
+    .newproduct_container h1{
+        margin-bottom: 0.5em;
+    }
+    
+    .newproduct_container p{
+        color: #7b7b7b;
+    }
+    
+    .signup_container {
+        width: 450px;
+        margin: 0 auto;
+        padding: 3em;
+        margin-top: 10%;
+    }
+
+    
+    .signup_container {
+        width: 650px;
+        margin: 0 auto;
+        padding: 3em;
+        margin-top: 25%;
+    }
+    .signup_container h1 {
+        margin-bottom: 0.5em;
+        font-size: 95px;
+    }
+
+    .form {
+        width: 100%;
+        margin: 2em 0;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1em;
+        
+    }
+    
+    .form input {
+        padding: .7em;
+        border-radius: 0;
+        border: none;
+        margin-top: 2em;
+        font-size: 30px;
+    }
+    
+    .form button{
+        margin-top: 2em;
+        padding: 2.7em;
+        cursor: pointer;
+        font-size: 30px;
+    }
+    
+    .form input::placeholder {
+        color: #7b7b7b;
+    }
+    
+    .form button{
+    
+        background-color: #222;
+        color: #fff;
+        padding: 0.5em 1em;
+        text-decoration: none;
+        transition: 1s;
+        margin-top: 2em;
+        border: none;
+    }
+    
+    .form button:hover{
+        color: #fc540c;
+    }
+
+    .form p{
+        margin-top: 10px;
+        font-size: 35px;
+    }
+      
+
+}
